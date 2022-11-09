@@ -1,0 +1,93 @@
+[1mdiff --cc bootstrap/cache/services.php[m
+[1mindex 6a7ed22,4830410..0000000[m
+[1m--- a/bootstrap/cache/services.php[m
+[1m+++ b/bootstrap/cache/services.php[m
+[36m@@@ -29,20 -29,19 +29,36 @@@[m
+      25 => 'Laravel\\Sail\\SailServiceProvider',[m
+      26 => 'Laravel\\Sanctum\\SanctumServiceProvider',[m
+      27 => 'Laravel\\Tinker\\TinkerServiceProvider',[m
+[32m++<<<<<<< HEAD[m
+[32m +    28 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m +    29 => 'Carbon\\Laravel\\ServiceProvider',[m
+[32m +    30 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',[m
+[32m +    31 => 'Termwind\\Laravel\\TermwindServiceProvider',[m
+[32m +    32 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m +    33 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',[m
+[32m +    34 => 'App\\Providers\\AppServiceProvider',[m
+[32m +    35 => 'App\\Providers\\AuthServiceProvider',[m
+[32m +    36 => 'App\\Providers\\EventServiceProvider',[m
+[32m +    37 => 'App\\Providers\\RouteServiceProvider',[m
+[32m +    38 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',[m
+[32m +    39 => 'Jenssegers\\Mongodb\\MongodbQueueServiceProvider',[m
+[32m +    40 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m +    41 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m++=======[m
+[32m+     28 => 'Carbon\\Laravel\\ServiceProvider',[m
+[32m+     29 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',[m
+[32m+     30 => 'Termwind\\Laravel\\TermwindServiceProvider',[m
+[32m+     31 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m+     32 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',[m
+[32m+     33 => 'App\\Providers\\AppServiceProvider',[m
+[32m+     34 => 'App\\Providers\\AuthServiceProvider',[m
+[32m+     35 => 'App\\Providers\\EventServiceProvider',[m
+[32m+     36 => 'App\\Providers\\RouteServiceProvider',[m
+[32m+     37 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',[m
+[32m+     38 => 'Jenssegers\\Mongodb\\MongodbQueueServiceProvider',[m
+[32m+     39 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m+     40 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m++>>>>>>> 77325054ee2745f4a28be5d58deeeee49a6c5b49[m
+    ),[m
+    'eager' => [m
+    array ([m
+[36m@@@ -58,19 -57,18 +74,34 @@@[m
+      9 => 'Illuminate\\View\\ViewServiceProvider',[m
+      10 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',[m
+      11 => 'Laravel\\Sanctum\\SanctumServiceProvider',[m
+[32m++<<<<<<< HEAD[m
+[32m +    12 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m +    13 => 'Carbon\\Laravel\\ServiceProvider',[m
+[32m +    14 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',[m
+[32m +    15 => 'Termwind\\Laravel\\TermwindServiceProvider',[m
+[32m +    16 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m +    17 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',[m
+[32m +    18 => 'App\\Providers\\AppServiceProvider',[m
+[32m +    19 => 'App\\Providers\\AuthServiceProvider',[m
+[32m +    20 => 'App\\Providers\\EventServiceProvider',[m
+[32m +    21 => 'App\\Providers\\RouteServiceProvider',[m
+[32m +    22 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',[m
+[32m +    23 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m +    24 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m++=======[m
+[32m+     12 => 'Carbon\\Laravel\\ServiceProvider',[m
+[32m+     13 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',[m
+[32m+     14 => 'Termwind\\Laravel\\TermwindServiceProvider',[m
+[32m+     15 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m+     16 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',[m
+[32m+     17 => 'App\\Providers\\AppServiceProvider',[m
+[32m+     18 => 'App\\Providers\\AuthServiceProvider',[m
+[32m+     19 => 'App\\Providers\\EventServiceProvider',[m
+[32m+     20 => 'App\\Providers\\RouteServiceProvider',[m
+[32m+     21 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',[m
+[32m+     22 => 'Maatwebsite\\Excel\\ExcelServiceProvider',[m
+[32m+     23 => 'PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider',[m
+[32m++>>>>>>> 77325054ee2745f4a28be5d58deeeee49a6c5b49[m
+    ),[m
+    'deferred' => [m
+    array ([m
+[1mdiff --cc routes/api.php[m
+[1mindex 6c62ec6,fb2ed83..0000000[m
+[1m--- a/routes/api.php[m
+[1m+++ b/routes/api.php[m
+[36m@@@ -10,8 -12,7 +12,12 @@@[m [muse App\Http\Controllers\Api\AlertContr[m
+  use App\Http\Controllers\Api\CallEvolutionController;[m
+  use App\Http\Controllers\EscalationController;[m
+  use App\Http\Controllers\Api\HierarchyController;[m
+[32m++<<<<<<< HEAD[m
+[32m +use App\Http\Controllers\Api\FormDetailsController;[m
+[32m +use App\Http\Controllers\Api\FormStructureController;[m
+[32m++=======[m
+[32m+ [m
+[32m++>>>>>>> 77325054ee2745f4a28be5d58deeeee49a6c5b49[m
+  /*[m
+  |--------------------------------------------------------------------------[m
+  | API Routes[m
